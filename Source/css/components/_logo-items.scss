@@ -1,0 +1,13 @@
+// -----------------logo-items-----------------------
+
+.logo-items {
+    background-color: $color--lighter-gray;
+    margin-top: 112px;
+    text-align: center;
+    padding-bottom: 55px;
+    padding-top: 60px;
+    @include media('<lg'){
+        margin-top: 50px;
+        padding: 50px 0;
+    }
+}

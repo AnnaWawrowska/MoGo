@@ -1,0 +1,138 @@
+// ----------------- Opinions -----------------------
+
+.opinions {
+  margin-top: 120px;
+  background-color: $color--lighter-gray;
+  padding-top: 71px;
+  padding-bottom: 50px;
+  @include media('<lg'){
+    margin-top: 40px;
+  }
+  @include media('<md') {
+    padding: 20px 0;
+  }
+
+  &--alt {
+    background-color: $color--white;
+    margin-top: 29px;
+    padding-bottom: 129px;
+    @include media('<lg'){
+      margin-top: 10px;
+      padding-bottom: 80px;
+    }
+    @include media('<md') {
+      padding: 20px 0;
+    }
+  }
+
+  &__slide {
+    outline: none;
+    &.slick-slide {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__img {
+    padding-right: 60px;
+
+    &--padding {
+      padding-right: 20px;
+    }
+    @include media('<xl'){
+      padding-right: 40px;
+      height: 125px;
+      margin-top: 10px;
+    }
+    @include media('<lg'){
+      height: 80px;
+      padding-right: 20px;
+    }
+    @include media('<md') {
+      float: none;
+      margin: 0 auto;
+      padding: 0 0 10px;
+
+    }
+  }
+
+  &__comment {
+    display: inline-block;
+    max-width: 78%;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 36px;
+    text-align: left;
+    letter-spacing: 0.4px;
+    outline: none;
+
+    &--alt {
+      max-width: 75%;
+      letter-spacing: -0.1px;
+      @include media('<lg'){
+        padding-top: 15px;
+      }
+      @include media('<md') {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+      }
+    }
+    @include media('<xl'){
+      font-size: 20px;
+      line-height: 30px;
+    }
+    @include media('<lg'){
+      font-size: 15px;
+      line-height: 20px;
+      width: calc(100% - 100px);
+    }
+    @include media('<md') {
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+
+    }
+  }
+
+  &__signature {
+    font-family: $font--cursive-main;
+    font-size: 24px;
+    display: block;
+    text-transform: none;
+    margin-bottom: 16px;
+    text-align: left;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 60px;
+      height: 3px;
+      background-color: $color--pink;
+      margin: 22px 9px 5px 1px;
+      @include media('<lg'){
+        width: 30px;
+        margin-top: 10px;
+      }
+    }
+    @include media('<lg'){
+      font-size: 18px;
+    }
+  }
+
+  .slider {
+    margin: 0 110px;
+    outline: none;
+    @include media('<lg'){
+      margin: 0 60px;
+    }
+  }
+
+  .slider-alt {
+    margin: 0 80px;
+    @include media('<md'){
+      margin: 0 20px;
+    }
+  }
+}

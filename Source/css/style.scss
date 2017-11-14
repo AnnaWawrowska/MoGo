@@ -1,0 +1,43 @@
+@charset 'utf-8';
+/* ------------------------------------------ */
+/*         STYLES COMPILED WITH SASS          */
+/*      Naming conceptions of the files:      */
+/*            BEM CSS METHODOLOGY:            */
+/*            http://en.bem.info/             */
+/* ------------------------------------------ */
+/* -- Helpers -- */
+@import 'helpers/normalize';
+@import 'helpers/include-media';
+@import 'helpers/fonts';
+@import 'helpers/colors';
+@import 'helpers/mixins';
+@import 'helpers/typography';
+@import 'helpers/general';
+@import 'helpers/keyframes';
+/* -- Vendors -- */
+@import 'vendor/slick';
+/* -- Elements -- */
+@import 'components/header';
+@import 'components/section-title';
+@import 'components/hero';
+@import 'components/about';
+@import 'components/numbers';
+@import 'components/service';
+@import 'components/design';
+@import 'components/what-we-do';
+@import 'components/opinions';
+@import 'components/team';
+@import 'components/footer';
+@import 'components/custom-scrollbar.scss';
+@import 'components/slick';
+@import 'components/picture';
+@import 'components/logo-items';
+@import 'components/our-work';
+@import 'components/what-people-say ';
+@import 'components/latest_blog';
+@import 'components/map';
+@import 'components/footer';
+@import 'components/footer-socials';
+@import 'components/footer-blogs';
+@import 'components/footer-instagram';
+@import 'components/social-media';

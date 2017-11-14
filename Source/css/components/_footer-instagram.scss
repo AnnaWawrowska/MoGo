@@ -1,0 +1,46 @@
+// -----------------footer instagram-----------------------
+
+.instagram {
+    width: 22.5%;
+    height: 366px;
+    @include media('<lg'){
+    width: 40%;
+    padding-left: 10px;
+    padding-right: 50px;
+    padding-top: 30px;
+    }
+    @include media('<md') {
+      width: 50%;
+      padding-right: 10px;
+    }
+    @include media('<sm') {
+      width: 100%;
+      padding: 20px;
+    }
+
+    &__title {
+        margin-top: 15px;
+        margin-bottom: 35px;
+    }
+    &__photos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 7px;
+    }
+    &__photo {
+        max-width: 32.5%;
+        padding-bottom: 2px;
+
+        @include media('<xl'){
+            height: 80px;
+        }
+    }
+    p {
+        font-size: 13px;
+        font-weight: 300;
+        font-style: italic;
+        color: $color--gray;
+        letter-spacing: -0.3px;
+    }
+}

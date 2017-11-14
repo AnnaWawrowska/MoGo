@@ -1,0 +1,19 @@
+.social-media__ico {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    border-right: 1px solid $color--pink;
+
+    
+    &:last-of-type {
+        border-right: none;
+    }
+
+    &:hover {
+        background-color: $color--pink;
+        color: $color--white;
+    }
+}

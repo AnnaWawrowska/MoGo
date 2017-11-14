@@ -1,0 +1,37 @@
+// -----------------Numbers -----------------------
+
+.numbers {
+    background-color: $color--light-blue;
+    height: 270px;
+    width: 100%;
+    margin: 109px 0;
+    @include media('<lg'){
+        margin: 70px 0;
+        height: 235px;
+    }
+    @include media('<md') {
+      height: inherit;
+    }
+}
+
+.number {
+    width: 20%;
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 85px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    @include media('<lg'){
+        padding: 60px 0;
+    }
+    @include media('<md') {
+       padding: 40px 0;
+    }
+
+    &--border-left {
+        border-left: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    &__quantity {
+        margin-bottom: 12px;
+    }
+}

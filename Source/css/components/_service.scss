@@ -1,0 +1,62 @@
+// -----------------Service -----------------------
+
+.service {
+    margin-bottom: 115px;
+
+    &__element {
+        display: flex;
+        width: 33%;
+        margin-top: 25px;
+        padding-left: 29px;
+        &:nth-child(-n+3) {
+            border-bottom: 1px solid $color--light-gray;
+            flex-grow: 1;
+            margin-bottom: 24px;
+            padding-bottom: 43px;
+        }
+        @include media('<xl'){
+            width:50%;
+            &:nth-child(-n+4) {
+                border-bottom: 1px solid $color--light-gray;
+                flex-grow: 1;
+                margin-bottom: 24px;
+                padding-bottom: 43px;
+            }
+            @include media('<md') {
+              flex-direction: column;
+              text-align: center;
+              padding-left: 10px;
+              &:nth-child(-n+4) {
+
+                  flex-grow: 1;
+                  margin-bottom: 24px;
+                  padding-bottom: 43px;
+              }
+            }
+        }
+    }
+
+    &__img {
+        width: 32px;
+        height: 32px;
+        margin-right: 30px;
+        @include media('<md') {
+          margin: 0 auto 20px;
+
+        }
+    }
+
+    &__title {
+        margin-bottom: 8px;
+    }
+
+    &__description {
+        font-size: 15px;
+        font-weight: 400;
+        max-width: 305px;
+    }
+
+    .flex-wrapper {
+        flex-wrap: wrap;
+    }
+}

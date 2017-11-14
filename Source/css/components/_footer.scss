@@ -1,0 +1,26 @@
+//-------------foooter------------------
+
+.footer {
+  background-color: $color--lighter-gray;
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 65px;
+    padding-bottom: 40px;
+  }
+
+  &__bottom {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  &__copyright {
+    color: $color--gray;
+    text-transform: none;
+    span {
+      color:$color--light-pink;
+    }
+  }
+}

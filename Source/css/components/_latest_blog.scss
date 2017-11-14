@@ -1,0 +1,110 @@
+// -----------------Latest-blog-----------------------
+
+.latest-blog {
+  padding-top: 108px;
+  margin-bottom: 113px;
+  @include media('<md') {
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.posts {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7px;
+  @include media('<md') {
+    flex-direction: column;
+  }
+
+  .post {
+    width: 31.7%;
+    @include media('<md') {
+      max-width: 400px;
+      margin: 0 auto;
+      width: auto;
+      padding-bottom: 50px;
+    }
+
+    &__img {
+      position: relative;
+
+    }
+
+    &__date {
+      position: absolute;
+      left: -11px;
+      bottom: 15px;
+      background-color: $color--light-blue;
+      color: $color--white;
+      padding: 10px 15px 15px;
+
+      p {
+        color: $color--white;
+        font-style: italic;
+        font-weight: 300;
+        margin: 0;
+        line-height: 10px;
+        padding-left: 4px;
+      }
+    }
+
+    &__signature {
+      padding-top: 14px;
+      margin-left: -1px;
+      padding-bottom: 6px;
+    }
+
+    &__content {
+      padding-bottom: 16px;
+      border-bottom: 1px solid $color--lighter-gray;
+      margin-bottom: 18px;
+      @include media('<md') {
+        margin: 0;
+      }
+    }
+
+    &__views {
+      position: relative;
+      padding-left: 25px;
+      padding-right: 12px;
+      font-style: italic;
+      color: $color--light-gray;
+      font-size: 15px;
+      font-weight: 300;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 2px;
+        left: -1px;
+        background-image: url("../img/ico-eye.svg");
+        background-repeat: no-repeat;
+      }
+    }
+
+    &__comments {
+      position: relative;
+      padding-left: 20px;
+      font-style: italic;
+      color: $color--light-gray;
+      font-size: 15px;
+      font-weight: 300;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 2px;
+        left: 0;
+        background-image: url("../img/ico-bubble.svg");
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}

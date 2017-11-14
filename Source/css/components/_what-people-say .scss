@@ -1,0 +1,96 @@
+// ----------------- what-people-say -----------------------
+
+.what-people-say {
+  background-image: url('../img/bg-clients.jpg');
+  background-size: cover;
+  padding-top: 108px;
+  position: relative;
+  background-position: center;
+
+  @include media('<lg'){
+    padding-top: 85px;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+    background-color: $color--white;
+  }
+}
+
+.comments {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 105px;
+  @include media('<lg'){
+    padding-bottom: 50px;
+  }
+  @include media('<sm') {
+    flex-direction: column;
+  }
+  .comment {
+    max-width: 50%;
+    display: flex;
+    @include media('<sm') {
+      flex-direction: column;
+      max-width: 100%;
+      align-items: center;
+      text-align: center;
+
+    }
+
+    &__photo {
+      padding-left: 38px;
+      padding-top: 46px;
+      img {
+        max-width: none;
+      }
+
+      @include media('<lg'){
+        padding-left: 15px;
+      }
+      @include media('<md') {
+        transform: scale(0.8);
+        padding-top: 10px;
+      }
+    }
+
+    &__content {
+      padding-left: 30px;
+      padding-top: 56px;
+      padding-bottom: 14px;
+      @include media('<md') {
+        padding: 20px 0 10px;
+      }
+    }
+
+    &__signature {}
+
+    &__profession {
+      font-weight: 300;
+      font-style: italic;
+      line-height: 24px;
+      color: $color--light-gray;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 3px;
+        background-color: $color--pink;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        @include media('<sm') {
+          margin: 10px auto;
+        }
+      }
+    }
+  }
+}

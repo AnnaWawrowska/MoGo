@@ -1,0 +1,90 @@
+// -----------------footer socials -----------------------
+
+.follow {
+  width: 39%;
+  @include media('<lg'){
+    margin: 0 auto;
+    width: 80%;
+  }
+  @include media('<md') {
+    width: 100%;
+    text-align: center;
+  }
+  &__logo {
+    text-align: left;
+    font-size: 46px;
+    $color--lighter-gray: #f8f8f8;
+    text-transform: none;
+    margin-left: -5px;
+    padding-bottom: 24px;
+    @include media('<md') {
+      text-align: center;
+    }
+  }
+
+  &__description {
+    padding-bottom: 38px;
+    width: 100%;
+    @include media('<md') {
+      padding-bottom: 10px;
+    }
+  }
+
+  &__number-of-followers {
+    span {
+      font-size: 18px;
+      font-weight: 700;
+    }
+    text-transform: none;
+    border-bottom: 1px solid $color--light-gray;
+    padding-bottom: 15px;
+    margin-bottom: 8px;
+  }
+  &__follow-us {
+    font-style: italic;
+    float: left;
+    letter-spacing: -0.5px;
+    padding-right: 10px;
+    margin-bottom: 33px;
+  }
+
+  &__list {
+    display: flex;
+    padding-top: 8px;
+  }
+
+  &__ico {
+    padding-left: 15px;
+  }
+
+  .form {
+    clear: both;
+
+    &__email {
+      color: $color--platinum;
+      font-style: italic;
+      font-size: 15px;
+      font-weight: 300;
+      background-color: $color--white;
+      padding: 10px 38px 11px 8px;
+      border: 1px solid $color--platinum;
+      @include media('<md') {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__button {
+      color: $color--white;
+      background-color: $color--light-blue;
+      font-family: $font--secondary;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      border: none;
+      padding: 12px 34px 12px 32px;
+      margin-left: -3px;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}

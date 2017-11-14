@@ -1,0 +1,8 @@
+// -----------------Team -----------------------
+
+.team {
+  margin-top: 99px;
+  @include media('<lg'){
+    margin-top: 50px;
+  }
+}

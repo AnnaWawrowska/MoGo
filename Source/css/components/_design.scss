@@ -1,0 +1,46 @@
+// -----------------Designe -----------------------
+
+.design {
+  background-image: url("../img/bg-mountains.jpg");
+  padding-top: 107px;
+  @include media('<lg'){
+    padding-top: 70px;
+  }
+
+  &__img {
+    margin: 0 auto 109px;
+    position: relative;
+    max-width: 500px;
+    display: block;
+    right: 16px;
+    padding-top: 3px;
+    @include media('<lg'){
+      max-width: 320px;
+      margin: 0 auto 70px;
+    }
+    @include media('<md') {
+      max-width: 60%;
+    }
+  }
+
+  &__tablet {
+    display: block;
+  }
+
+  &__phone {
+    position: absolute;
+    right: -137px;
+    bottom: -92px;
+    @include media('<lg'){
+      height: 270px;
+      right: -80px;
+      bottom: -65px;
+    }
+    @include media('<md') {
+      height: 80%;
+      right: -60px;
+      bottom: -45px;
+
+    }
+  }
+}

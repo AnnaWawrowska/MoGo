@@ -1,0 +1,77 @@
+// ---------------------------------------------------
+// Addition CSS reset
+// ---------------------------------------------------
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-start: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+button,
+iframe {
+	border: none;
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-before: 0;
+	-webkit-padding-start: 0;
+	-webkit-padding-end: 0;
+	-webkit-padding-after: 0;
+	min-width: auto;
+}
+
+img {
+	max-width: 100%;
+}
+// ---------------------------------------------------
+// General
+// ---------------------------------------------------
+
+body {
+	font-family: $font--main;
+	color: $color--gray;
+}
+
+.container {
+	width: 1240px;
+	padding: 0 20px;
+	margin: 0 auto;
+	position: relative;
+	@include media('<xl'){
+		width: 1024px;
+	}
+	@include media('<lg'){
+		width: 768px;
+	}
+	@include media('<md') {
+	  width: 100%;
+	}
+}
+
+
+
+.flex-wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}

@@ -1,0 +1,43 @@
+// -----------------footer blogs -----------------------
+
+.blogs {
+  width: 32%;
+  padding-top: 13px;
+  padding-left: 2px;
+  @include media('<lg'){
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+  @include media('<md') {
+    width: 50%;
+  }
+  @include media('<sm') {
+    width: 100%;
+    padding-top: 40px;
+  }
+
+  &__title {
+    padding-bottom: 6px;
+  }
+
+  &__post {
+    display: flex;
+    padding-top: 31px;
+  }
+
+  &__img {
+    padding-right: 22px;
+  }
+
+  &__description {
+    padding-top: 18px;
+    max-width: 200px;
+
+    p {
+      font-style: italic;
+      font-size: 13px;
+      margin: 0;
+    }
+  }
+}
