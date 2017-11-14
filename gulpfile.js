@@ -1,5 +1,4 @@
 'use strict';
-//npm install --only=dev
 
 var gulp = require('gulp');
 var sass = require('gulp-sass'),
@@ -24,7 +23,7 @@ gulp.task('sass', function () {
 
 gulp.task('server', function() {
   browserSync.init({
-    server: 'Source/'
+    server: 'source/'
   });
 });
 
@@ -51,7 +50,7 @@ gulp.task('images', function(){
 })
 
 gulp.task('copy', function() {
-  return gulp.src(['source/css/**/*.css', 'source/img/*'], {
+  return gulp.src(['source/css/**/*.css', 'source/css/vendor/*', 'source/img/*', 'source/js/**/*', 'source/fonts/*'], {
     base: 'source'
   })
   .pipe(gulp.dest('public_html/'))
@@ -61,7 +60,7 @@ gulp.task('build', function(cb) {
   runSequence('clean', 'html', 'copy', 'images', cb)
 });
 
-gulp.task('build:server', ['build'], function() {
+gulp.task('bulid:server', ['bulid'], function() {
   browserSync.init({
     server: 'public_html/'
   })

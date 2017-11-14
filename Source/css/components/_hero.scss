@@ -2,7 +2,7 @@
 
 .hero {
   height: 100vh;
-  background-image: url("../../img/bg-hero.jpg");
+  background-image: url("../img/bg-hero.jpg");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -24,7 +24,7 @@
   }
 
   @include media('<md') {
-    background-image: url("../../img/bg-hero--small.jpg");
+    background-image: url("../img/bg-hero--small.jpg");
   }
 
   &__button {
