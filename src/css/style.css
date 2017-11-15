@@ -498,7 +498,7 @@ h1 {
   text-transform: uppercase;
 }
 
-@media (max-width: 1239px) {
+@media (max-width: 1399px) {
   h1 {
     font-size: 100px;
     line-height: 100px;
@@ -947,6 +947,19 @@ body {
   position: relative;
 }
 
+@media (max-width: 1399px) {
+  .hero {
+    height: auto;
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    background-image: url("../img/bg-hero--small.jpg");
+  }
+}
+
 .hero:before {
   content: "";
   display: block;
@@ -958,12 +971,6 @@ body {
   opacity: 0.5;
   transition: all 0.4s ease;
   background-image: linear-gradient(0, #fce38a 0%, #f38181 100%);
-}
-
-@media (max-width: 767px) {
-  .hero {
-    background-image: url("../img/bg-hero--small.jpg");
-  }
 }
 
 .hero__button {

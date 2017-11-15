@@ -7,6 +7,13 @@
   background-position: center;
   text-align: center;
   position: relative;
+  @include media('<xxl') {
+     height: auto;
+     padding-bottom: 100px;
+  }
+  @include media('<md') {
+    background-image: url("../img/bg-hero--small.jpg");
+  }
   &:before {
     content: "";
     display: block;
@@ -21,10 +28,6 @@
     background-image: -webkit-linear-gradient( 0, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
     background-image: -ms-linear-gradient( 0, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
     background-image: linear-gradient( 0, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
-  }
-
-  @include media('<md') {
-    background-image: url("../img/bg-hero--small.jpg");
   }
 
   &__button {
