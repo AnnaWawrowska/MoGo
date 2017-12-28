@@ -16,17 +16,6 @@ $(document).ready(function(){
     $('.counter').counterUp({
         delay: 10
     });
-
-    // $( ".map__overlay" ).on( "click", function( ) {
-    //     $('.map__container').addClass("map__open");
-    //     $('.map__overlay').hide();
-    // });
-    //
-    // $(".map").dblclick(function() {
-    //     $('.map__container').removeClass('map__open');
-    //     $('.map__overlay').show();
-    //
-    // });
 });
 
 $( window ).resize(function() {
